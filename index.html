@@ -7,21 +7,17 @@
     <title>Flexbox Tutorial</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
-      /* justify-content horizontal alignment */
-      /* flex-start (default) flex-end center */
-      /* evenly distributed */
-      /* space-between first item start last end */
-      /* space-around side margins */
-      /* space-evenly even margins */
+      /* align-items vertical alignment */
+      /* stretch (default), flex-start, flex-end, center, baseline */
       .container {
+        height: 300px;
+        height: 40vh;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        justify-content: flex-end;
-        justify-content: space-between;
-        justify-content: space-around;
-        justify-content: space-evenly;
-        justify-content: center;
+        align-items: stretch;
+        align-items: flex-start;
+        align-items: flex-end;
+        align-items: center;
+        align-items: baseline;
       }
     </style>
   </head>
