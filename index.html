@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox Tutorial</title>
     <link rel="stylesheet" href="styles.css" />
-    <!-- order === all children have order: 0 by default -->
+    <!-- align-self property -->
 
     <style>
       .container {
         display: flex;
-        flex-direction: column;
-      }
-      .box-1 {
-        /* children have default of 0 */
-        order: 2;
-      }
-      .box-2 {
-        order: 1;
+        height: 500px;
+        align-items: center;
+        align-items: flex-end;
       }
       .box-5 {
-        order: -1;
+        /* align-self: flex-end; */
+        align-self: flex-start;
+      }
+      .box-3 {
+        align-self: stretch;
+      }
+      .box-1 {
+        align-self: center;
       }
     </style>
   </head>
