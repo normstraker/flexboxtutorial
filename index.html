@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox Tutorial</title>
     <link rel="stylesheet" href="styles.css" />
-    <!-- flex-shrink all children have flex-shrink:1 -->
+    <!-- flex-basis base value and flex shortcut -->
 
     <style>
       .container {
         display: flex;
-        /* flex-wrap: wrap; */
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
       }
-      .box-2 {
-        width: 300px;
-        /* setting flex-shrink to 0 prevents the item from shrinking */
-        /* flex-shrink: 0; */
+      .box {
+        /* flex-basis: 150px; */
+        /* flex: 1 0 200px; */
+        flex: 0 0 calc(20% - 1rem);
       }
     </style>
   </head>
